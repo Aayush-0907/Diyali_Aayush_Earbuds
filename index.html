@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1 class="heading">Hover over hotspots to explore - AD Earbuds</h1>
+    <header>
+      <h1 class="heading">Hover over hotspots to explore - AD Earbuds</h1>
+    </header>
 
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="model/MODEL VIEWER THING.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-        tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1" camera-orbit="-163.4deg 93.2deg 1.529m"
-        field-of-view="30deg" disable-zoom>
+    <main>
+      <!-- <model-viewer> HTML element -->
+      <section class="model-section">
+        <model-viewer src="model/MODEL VIEWER THING.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+            tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1" camera-orbit="0deg 75deg 15m"
+            field-of-view="30deg">
       <button class="Hotspot" slot="hotspot-1" data-position="-5.663906525447625m 2.0474527725744642m 0.8249909523257906m" data-normal="0.018051561935852414m 0.08800060143152749m -0.995956844074765m" data-visibility-attribute="visible">
             <span class="HotspotAnnotation" id="hotspot-1">
             </span>
@@ -40,12 +44,13 @@
       <div id="ar-prompt">
           <img src="images/ar_hand_prompt.png" alt="ar-prompt">
       </div>
-    </model-viewer>
+        </model-viewer>
+      </section>
 
-    <section class="grid-con mobile-hotspots">
+      <section class="grid-con mobile-hotspots">
         <h2 class="mobile-heading col-span-full">Explore the features - AD Earbuds 360</h2>
         <div class="mobile-info col-span-full">
-            <img src="images/logo-icon.png" alt="Brand Logo">
+            <img src="images/Logo.png" alt="Brand Logo">
             <div>
                 <h3>Premium Branding</h3>
                 <p>Distinctive logo design that represents quality and innovation in audio technology.</p>
@@ -83,7 +88,12 @@
                 <p>Magnetic charging contacts provide secure and efficient power transfer for quick and reliable charging of your earbuds.</p>
             </div>
         </div>
-    </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 AD Earbuds. All rights reserved.</p>
+    </footer>
 
     <!-- link to greensock main library -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
