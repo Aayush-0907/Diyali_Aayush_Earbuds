@@ -1,47 +1,59 @@
 @use '../abstracts';
 
+// Base Body Styles
 body {
   margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+  padding: 20px;
   background-color: abstracts.$background-color;
-  font-family: abstracts.$body-font-family;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: abstracts.$text-color;
+  line-height: 1.6;
 }
 
+// Clean Typography
 h1 {
-   font-family: abstracts.$heading-font-family;
-   text-align: center;
-   font-weight: normal;
+   font-size: 2.5rem;
+   font-weight: 700;
    color: abstracts.$text-color;
-   margin: 20px 0;
+   margin: 0 0 1rem 0;
+   text-align: center;
 }
 
 h2 {
-   font-family: abstracts.$heading-font-family;
-   text-align: center;
-   font-weight: 500;
+   font-size: 1.8rem;
+   font-weight: 600;
    color: abstracts.$text-color;
+   margin: 0 0 0.75rem 0;
+   text-align: center;
 }
 
 h3 {
-   font-family: abstracts.$heading-font-family;
+   font-size: 1.3rem;
+   font-weight: 500;
    color: abstracts.$text-color;
-   margin: 10px 0;
+   margin: 0 0 0.5rem 0;
 }
 
 p {
-  font-family: abstracts.$body-font-family;
-  color: abstracts.$text-color;
-  line-height: 1.5;
+  font-size: 1rem;
+  color: abstracts.$text-light;
+  margin: 0 0 1rem 0;
 }
 
+// Simple Footer
 footer {
-  background-color: abstracts.$primary-color;
+  background: linear-gradient(135deg, abstracts.$primary-color, abstracts.$secondary-color);
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  border-radius: 1rem 1rem 0 0;
+  
+  p {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+  }
 }
 
 footer p {
