@@ -1,5 +1,16 @@
 (() => {
   gsap.registerPlugin(ScrollTrigger);
+
+  // Hamburger Menu Toggle
+  const burgerButton = document.querySelector("#button");
+  const burgerContainer = document.querySelector("#burger-con");
+
+  if (burgerButton) {
+    burgerButton.addEventListener("click", function () {
+      burgerButton.classList.toggle("expanded");
+      burgerContainer.classList.toggle("slide-toggle");
+    });
+  }
   
   const hotspots = document.querySelectorAll(".Hotspot");
   const modelViewer = document.querySelector('model-viewer');

@@ -9,16 +9,29 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
+    <header id="main-header">
+      <nav id="main-nav">
+        <div id="logo-head">
+                    <img src="images/Logo.png" alt="EARBUD LOGO">
+                </div>
+        <button id="button"></button>
+        <div id="burger-con">
+          <ul>
+            <li><a href="#3Dmodel">3D Model</a></li>
+            <li><a href="#xray">X-Ray Slider</a></li>
+          </ul>
+        </div>
+      </nav>
       <h1 class="heading">AD Earbuds</h1>
     </header>
 
     <main>
       <!-- <model-viewer> HTML element -->
-      <section class="model-section">
+      <section class="model-section ">
         <div class="col-span-full">
             <canvas id="explode-view"></canvas> 
         </div>
+        <div id="3Dmodel">
         <model-viewer src="model/MODEL VIEWER THING.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls
             tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1" camera-orbit="0deg 75deg 15m"
             field-of-view="30deg">
@@ -45,6 +58,7 @@
           View in your space
       </button>
         </model-viewer>
+        </div>
         
       </section>
 
