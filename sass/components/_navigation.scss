@@ -1,0 +1,161 @@
+@use "../abstracts" as a;
+
+#main-header {
+  background-color: #f8fafc;
+  padding: 1rem 0;
+}
+
+#main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+#button {
+  width: 24px;
+  height: 24px;
+  background: url(../images/burger-con.svg) no-repeat center;
+  background-size: contain;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  display: block;
+  padding: 1rem;
+}
+
+#logo-head {
+  display: block;
+  margin-bottom: 0;
+  padding: 0.5rem 0;
+}
+
+#logo-head img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+#button.expanded {
+  transform: rotate(90deg);
+}
+
+#burger-con {
+  display: none;
+  width: 100%;
+  order: 3;
+}
+
+#burger-con.slide-toggle {
+  display: block;
+}
+
+#burger-con ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+#burger-con ul li a {
+  display: block;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#burger-con ul li a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.heading {
+  display: none;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1e293b;
+}
+
+/* Tablet and Desktop */
+@media screen and (min-width: 768px) {
+  #main-nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 3rem;
+    position: relative;
+  }
+
+  #logo-head {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  #logo-head img {
+    height: 100px;
+    width: auto;
+  }
+
+  #button {
+    display: none;
+  }
+
+  #burger-con {
+    display: block;
+    margin-left: 0;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #burger-con ul {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 0;
+  }
+
+  #burger-con ul li a {
+    font-size: 1rem;
+  }
+
+  .heading {
+    display: block;
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) {
+  #main-nav {
+    padding: 2rem 2rem;
+  }
+
+  #burger-con ul {
+    gap: 4rem;
+  }
+
+  #burger-con ul li a {
+    font-size: 1.1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
