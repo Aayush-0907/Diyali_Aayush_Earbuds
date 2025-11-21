@@ -1,4 +1,5 @@
 (() => {
+  gsap.registerPlugin(ScrollTrigger);
   
   const hotspots = document.querySelectorAll(".Hotspot");
   const modelViewer = document.querySelector('model-viewer');
@@ -106,6 +107,7 @@
     modelViewer.addEventListener('progress', handleProgressUpdate);
   }
 
+// scrollling animation
 
   const canvas = document.querySelector("#explode-view");
     const context = canvas.getContext("2d");
@@ -113,19 +115,18 @@
     canvas.width = 1920;
     canvas.height = 1080;
 
-    // how many still images we have
+   
     const frameCount = 390;
     
-//array to hold images 
+
     const images = [];
 
-    //object will hold the current frame 
-    //we will use greensock to animate the frame property
+  
     const buds = {
         frame : 0
     }
 
-    //Run a for loop to populate the images array
+   
     for ( let i = 0; i<frameCount; i++ ) {
         const img = new Image();
         img.src = `images/final render_${(i+1).toString().padStart(5, '0')}.webp`;
@@ -152,12 +153,12 @@
     images[0].addEventListener("load", render);
 
     function render() {
-       // console.log(buds.frame);
-      // console.log(images[buds.frame]);
+      
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(images[buds.frame], 0, 0);
     }
 
+// slider
 
     const divisor = document.querySelector("#divisor");
     const slider = document.querySelector("#slider");
