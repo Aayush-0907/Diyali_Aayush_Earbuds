@@ -1,0 +1,24 @@
+
+// Modern Minimal Color Palette
+$primary-color: #2563eb;        // Clean blue
+$secondary-color: #f59e0b;      // Warm amber
+$accent-color: #10b981;         // Fresh green
+$background-color: #f8fafc;     // Soft gray
+$text-color: #1e293b;           // Dark slate
+$text-light: #64748b;           // Muted gray
+
+// Component Colors
+$card-bg: #ffffff;
+$border-color: #e2e8f0;
+$hotspot-color: #3b82f6;
+$hotspot-hover: #1d4ed8;
+
+// Interactive Elements
+$button-bg: $primary-color;
+$button-hover: #1d4ed8;
+$mobile-info-bg: #f1f5f9;
+
+// Progress Styling
+$progress-bg: rgba(0, 0, 0, 0.08);
+$progress-bar: $primary-color;
+$progress-main: $secondary-color;        

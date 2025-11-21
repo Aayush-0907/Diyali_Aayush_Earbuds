@@ -1,29 +1,17 @@
 (() => {
+  gsap.registerPlugin(ScrollTrigger);
 
-<<<<<<< Updated upstream
-    const hotspots = document.querySelectorAll(".Hotspot");
-
-    function showInfo(){
-        console.log(`Showing info for ${this.slot}`);
-        const annotation = this.querySelector('.HotspotAnnotation');
-        if (annotation) {
-            gsap.to(annotation, {duration: 1, autoAlpha: 1});
-        }
-=======
-  // Hamburger Menu Toggle with Accessibility
+  // Hamburger Menu Toggle
   const burgerButton = document.querySelector("#button");
   const burgerContainer = document.querySelector("#burger-con");
 
   burgerButton.addEventListener("click", function () {
     burgerButton.classList.toggle("expanded");
     burgerContainer.classList.toggle("slide-toggle");
-    // Update aria-expanded attribute for accessibility
-    const isExpanded = burgerButton.classList.contains("expanded");
-    burgerButton.setAttribute("aria-expanded", isExpanded);
   });
   
   const hotspots = document.querySelectorAll(".Hotspot");
-  const modelViewer = document.querySelector("model-viewer");
+  const modelViewer = document.querySelector('model-viewer');
   
   const hotspotsContents = [
     {
@@ -55,24 +43,29 @@
       text: "Magnetic charging contacts provide secure and efficient power transfer for quick and reliable charging of your earbuds.",
       image: "images/Charging-contact.png",
       alt: "Charging Contact"
->>>>>>> Stashed changes
     }
+  ];
 
-    function hideInfo(){
-        console.log(`Hiding info for ${this.slot}`);
-        const annotation = this.querySelector('.HotspotAnnotation');
-        if (annotation) {
-            gsap.to(annotation, {duration: 1, autoAlpha: 0});
-        }
-    }
-
-    hotspots.forEach( function(hotspot) {
-        hotspot.addEventListener("mouseenter", showInfo);
-        hotspot.addEventListener("mouseleave", hideInfo);
-
+  // Function definitions
+  function populateHotspotContent() {
+    hotspotsContents.forEach((content, index) => {
+      const selectedHotspot = document.querySelector(`#hotspot-${index + 1}`);
+      
+      if (selectedHotspot) {
+        const imageElement = document.createElement('img');
+        const titleElement = document.createElement('h2');
+        const textElement = document.createElement('p');
+        
+        imageElement.src = content.image;
+        imageElement.alt = content.alt;
+        titleElement.textContent = content.title;
+        textElement.textContent = content.text;
+        
+        selectedHotspot.appendChild(imageElement);
+        selectedHotspot.appendChild(titleElement);
+        selectedHotspot.appendChild(textElement);
+      }
     });
-<<<<<<< Updated upstream
-=======
   }
 
   function showHotspotFeatures() {
@@ -125,6 +118,15 @@
 
 // scrollling animation
 
+    const hotspots = document.querySelectorAll(".Hotspot");
+
+    function showInfo(){
+        console.log(`Showing info for ${this.slot}`);
+        const annotation = this.querySelector('.HotspotAnnotation');
+        if (annotation) {
+            gsap.to(annotation, {duration: 1, autoAlpha: 1});
+        }
+
   const canvas = document.querySelector("#explode-view");
     const context = canvas.getContext("2d");
 
@@ -140,6 +142,7 @@
   
     const buds = {
         frame : 0
+
     }
 
    
@@ -159,8 +162,11 @@
             start: "top top",
            
 
+    });
+      
         },
         onUpdate: render
+
 
     })
 
@@ -179,25 +185,16 @@
 
     function moveDivisor() {
         divisor.style.width = `${slider.value}%`;
-        // Update aria-valuenow for accessibility
-        slider.setAttribute("aria-valuenow", slider.value);
     }
 
     function resetSlider() {
         slider.value = 50;
-        slider.setAttribute("aria-valuenow", 50);
     }
 
     slider.addEventListener("input", moveDivisor);
     window.addEventListener("load", resetSlider);
->>>>>>> Stashed changes
 
 })();
-
-
-
-
-
 
 
 

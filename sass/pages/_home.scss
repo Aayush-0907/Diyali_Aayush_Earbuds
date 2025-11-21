@@ -1,0 +1,55 @@
+@use '../abstracts';
+
+// Main Page Layout
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+// Hero Section
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, abstracts.$background-color 0%, #f1f5f9 100%);
+  
+  h1 {
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, abstracts.$primary-color, abstracts.$secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// Feature Grid
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1rem;
+  
+  .feature-card {
+    background: abstracts.$card-bg;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid abstracts.$border-color;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+    
+    h3 {
+      color: abstracts.$primary-color;
+      margin-bottom: 1rem;
+    }
+  }
+}

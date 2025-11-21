@@ -1,0 +1,57 @@
+@use '../abstracts';
+
+// Base Body Styles
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: abstracts.$background-color;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: abstracts.$text-color;
+  line-height: 1.6;
+}
+
+// Clean Typography
+h1 {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: abstracts.$text-color;
+   margin: 0 0 1rem 0;
+   text-align: center;
+}
+
+h2 {
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: abstracts.$text-color;
+   margin: 0 0 0.75rem 0;
+   text-align: center;
+}
+
+h3 {
+   font-size: 1.3rem;
+   font-weight: 500;
+   color: abstracts.$text-color;
+   margin: 0 0 0.5rem 0;
+}
+
+p {
+  font-size: 1rem;
+  color: abstracts.$text-light;
+  margin: 0 0 1rem 0;
+}
+
+// Simple Footer
+footer {
+  background: linear-gradient(135deg, abstracts.$primary-color, abstracts.$secondary-color);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  border-radius: 1rem 1rem 0 0;
+  
+  p {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}

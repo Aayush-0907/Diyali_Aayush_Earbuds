@@ -1,7 +1,5 @@
-<<<<<<< Updated upstream
 # Diyali_Aayush_Earbuds
 This is a repo of my earbud website
-=======
 # AD Earbuds Promotion Website
 
 ## About 
@@ -54,4 +52,4 @@ Feel free to DM me!!!!
 
 LinkedIn: www.linkedin.com/in/
 aayush-diyali-98b52b329
->>>>>>> Stashed changes
+
