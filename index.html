@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AD Earbuds</title>
+    <title>AD Earbuds 360 - Premium Wireless Earbuds Experience</title>
     <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="description" content="Experience AD Earbuds 360 with interactive 3D model, X-ray slider, and detailed feature exploration. Premium wireless audio technology.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Aayush Diyali">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+<<<<<<< Updated upstream
     <h1 class="heading">Hover over hotspots to explore - AD Earbuds</h1>
 
     <!-- <model-viewer> HTML element -->
@@ -84,10 +86,138 @@
             </div>
         </div>
     </section>
+=======
+    <header id="main-header">
+      <nav id="main-nav" aria-label="Main Navigation">
+        <div id="logo-head">
+          <img src="images/Logo.png" alt="AD Earbuds Logo - Home">
+        </div>
+        <button id="button" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="burger-con"></button>
+        <div id="burger-con">
+          <ul>
+            <li><a href="#3Dmodel">3D Model</a></li>
+            <li><a href="#xray">X-Ray Slider</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="heading">Welcome to AD Earbuds 360</h1>
+    </header>
 
-    <!-- link to greensock main library -->
+    <main id="main-content">
+      <!-- 3D Model Section -->
+      <section class="model-section" aria-labelledby="model-heading">
+        <div class="col-span-full">
+          <canvas id="explode-view" title="Animated explode view of AD Earbuds"></canvas>
+        </div>
+        <h2 id="model-heading" class="model-heading col-span-full">Interact with the 3D Model - AD Earbuds 360</h2>
+        <div id="3Dmodel">
+          <model-viewer 
+            src="model/MODEL VIEWER THING.gltf" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls
+            tone-mapping="neutral" 
+            poster="images/poster.webp" 
+            shadow-intensity="1" 
+            camera-orbit="0deg 75deg 15m"
+            field-of-view="30deg">
+            <button class="Hotspot" slot="hotspot-1" data-position="-5.663906525447625m 2.0474527725744642m 0.8249909523257906m" data-normal="0.018051561935852414m 0.08800060143152749m -0.995956844074765m" data-visibility-attribute="visible" aria-label="Feature 1: Premium Branding">
+              <span class="HotspotAnnotation" id="hotspot-1"></span>
+            </button>
+            <button class="Hotspot" slot="hotspot-2" data-position="-5.889098491306878m 2.245123748481184m 1.5959086435734027m" data-normal="-0.5775279519820958m -0.35972511433738824m 0.7328433030289074m" data-visibility-attribute="visible" aria-label="Feature 2: Soft Silicon Eartip">
+              <span class="HotspotAnnotation" id="hotspot-2"></span>
+            </button>
+            <button class="Hotspot" slot="hotspot-3" data-position="-5.368734074548888m 2.081930983363584m 1.3788915160841761m" data-normal="0.39739815342216894m 0.0184257506408388m 0.9174612794935665m" data-visibility-attribute="visible" aria-label="Feature 3: Smart Proximity Sensor">
+              <span class="HotspotAnnotation" id="hotspot-3"></span>
+            </button>
+            <button class="Hotspot" slot="hotspot-4" data-position="-5.520687606397982m 0.9821592393647323m 0.8689168430928274m" data-normal="0.999833020840622m 0.0011480236949774555m 0.018237666471129104m" data-visibility-attribute="visible" aria-label="Feature 4: Intuitive Touch Control">
+              <span class="HotspotAnnotation" id="hotspot-4"></span>
+            </button>
+            <button class="Hotspot" slot="hotspot-5" data-position="-5.648656445480517m 0.7591199146895877m 0.7870637174394071m" data-normal="0.023762825456503038m -0.9955531761459163m -0.0911548221001067m" data-visibility-attribute="visible" aria-label="Feature 5: Charging Contact">
+              <span class="HotspotAnnotation" id="hotspot-5"></span>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar" aria-hidden="true">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button" aria-label="View AD Earbuds in Augmented Reality">
+              View in your space
+            </button>
+          </model-viewer>
+        </div>
+      </section>
+
+      <!-- Mobile Features Section -->
+      <section class="grid-con mobile-hotspots" aria-labelledby="mobile-features-heading">
+        <h2 id="mobile-features-heading" class="mobile-heading col-span-full">Explore the Features - AD Earbuds 360</h2>
+        
+        <article class="mobile-info col-span-full">
+          <img src="images/Logo.png" alt="Premium Branding feature icon">
+          <div>
+            <h3>Premium Branding</h3>
+            <p>Distinctive logo design that represents quality and innovation in audio technology.</p>
+          </div>
+        </article>
+
+        <article class="mobile-info col-span-full">
+          <img src="images/silicon-eartip.png" alt="Soft Silicon Eartip feature icon">
+          <div>
+            <h3>Soft Silicon Eartip</h3>
+            <p>Ultra-comfortable silicone tips that provide the perfect seal for enhanced sound isolation and all-day comfort.</p>
+          </div>
+        </article>
+
+        <article class="mobile-info col-span-full">
+          <img src="images/proximity-sensor.png" alt="Smart Proximity Sensor feature icon">
+          <div>
+            <h3>Smart Proximity Sensor</h3>
+            <p>Advanced sensor technology that detects when earbuds are in your ears, automatically managing playback for seamless user experience.</p>
+          </div>
+        </article>
+
+        <article class="mobile-info col-span-full">
+          <img src="images/touch-control.png" alt="Intuitive Touch Control feature icon">
+          <div>
+            <h3>Intuitive Touch Control</h3>
+            <p>Smart touch sensor that lets you control music playback, answer calls, and activate voice assistant with simple gestures.</p>
+          </div>
+        </article>
+
+        <article class="mobile-info col-span-full">
+          <img src="images/Charging-contact.png" alt="Charging Contact feature icon">
+          <div>
+            <h3>Charging Contact</h3>
+            <p>Magnetic charging contacts provide secure and efficient power transfer for quick and reliable charging of your earbuds.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- X-Ray Slider and Poster Section -->
+      <section aria-labelledby="xray-heading">
+        <h2 id="xray-heading" class="slider-heading col-span-full">X-Ray Slider - Explore the Internal Components</h2>
+        <div class="col-span-full">
+          <div id="xray" role="img" aria-label="X-ray slider showing internal and external view of earbuds. Use the slider to compare components.">
+            <div id="divisor" role="presentation"></div>
+            <input type="range" min="0" max="100" value="50" id="slider" aria-label="Adjust slider to reveal X-ray view" aria-valuenow="50">
+          </div>
+          <div id="poster-con">
+            <p>SHOP NOW</p>
+            <img src="images/poster2.png" alt="Advertisement for AD Earbuds - Shop now for premium audio experience">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 AD Earbuds. All rights reserved.</p>
+    </footer>
+>>>>>>> Stashed changes
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<<<<<<< Updated upstream
     <!-- Loads <model-viewer> for browsers: -->
+=======
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+>>>>>>> Stashed changes
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     
     <script src="js/main.js"></script>
