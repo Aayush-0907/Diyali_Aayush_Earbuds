@@ -1,5 +1,5 @@
 # AD Earbuds Promotion Website
-![Alt text](./images/final render_00118)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/686e5173-2e55-4cb9-869a-4c68cbe99e71" />
 ## About 
 This promotional website highlights a 3D earbud model created in Cinema 4D. The model was designed and textured to achieve a realistic look, then imported into Model Viewer to make it interactive for the web. Through Model Viewer, users can explore the earbud from different angles, while added hotspots provide detailed information about its features and design. This project combines 3D modeling and web integration to create an engaging and immersive product showcase
 
